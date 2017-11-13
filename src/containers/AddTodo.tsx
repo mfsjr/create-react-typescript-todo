@@ -26,7 +26,7 @@ function AddTodoComponent (props: AddTodoProps)  {
                     e.preventDefault();
                     if (!input.value.trim()) {
                         return
-                    } // here is our replacement for an action creator function, a type-checked object literal
+                    } // here is a replacement for an action creator function, a type-checked object literal
                     let action: AddToDoText = {type: ActionId.Add_ToDo, text: input.value};
                     props.dispatch(action);
                     input.value = ''

@@ -17,7 +17,7 @@ const mapStateToProps = (state: DataState, ownProps: FilterLinkProps): Partial<L
 
 const mapDispatchToProps = (dispatch: Dispatch<SetVisibilityFilter>, ownProps: FilterLinkProps): Partial<LinkProps> => {
     return {
-        onClick: () => { // here is our replacement for an action creator function, a type-checked object literal
+        onClick: () => { // here is a replacement for an action creator function, a type-checked object literal
             let action: SetVisibilityFilter = {type: ActionId.Set_VisibilityFilter, visibilityFilter: ownProps.visibilityFilter};
             dispatch(action);
         }

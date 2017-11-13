@@ -21,9 +21,10 @@ do a better job of highlighting and explaining exactly how they work.
 ### Techniques and Results
 1. **TypeScript enum values** are actually types. So enums are compact and 
     they can be used to create actions in which every property is type-checked.
-    1. **Result**: You don't need action creator functions, they can be replaced by fully 
+    1. **Result**: In many cases action creator functions can be replaced by fully 
       type-checked object literals created in situ (Redux requires them to be plain objects anyway).
-      Obviously, if you need to create them for other reasons, nothing is stopping you.
+      Obviously, if you need to create them for other reasons, you can write action creator 
+      functions using type-checked object literals.
 
 2. **TypeScript discriminated unions with typeguards** can be used in reducers to translate the
   action enum value in a switch statement to the exact action type created with that 
