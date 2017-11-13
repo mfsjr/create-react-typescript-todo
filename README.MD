@@ -13,8 +13,8 @@ At that point I looked around, and saw that some of the things I had done were
 discussed elsewhere. 
 
 Nonetheless, I haven't really seen these approaches demonstrated in a simple project 
-anywhere (yet).  Articles that overlap these techniques are overrall quite 
-good since they are proposing better techniques, but also seem like they could 
+anywhere (yet).  The articles that overlap this project are useful, 
+since they are proposing techniques for improvement, but also seem like they could 
 do a better job of highlighting and explaining exactly how they work.
 
 
