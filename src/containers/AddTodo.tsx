@@ -2,8 +2,7 @@ import * as React from 'react'
 import {connect, Dispatch} from 'react-redux'
 import {AddToDoText} from '../actions'
 import {ActionId} from "../actions/index";
-import {DataState, ToDo} from "../types/index";
-import {Action} from "redux";
+import {DataState} from "../types/index";
 
 /**
  * Note that this component mixes presentation and container/controller logic
