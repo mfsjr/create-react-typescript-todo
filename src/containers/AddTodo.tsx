@@ -2,7 +2,7 @@ import * as React from 'react'
 import {connect, Dispatch} from 'react-redux'
 import {AddToDoText} from '../actions'
 import {ActionId} from "../actions/index";
-import {ToDo} from "../types/index";
+import {DataState, ToDo} from "../types/index";
 import {Action} from "redux";
 
 /**
@@ -13,7 +13,7 @@ import {Action} from "redux";
  */
 
 export interface AddTodoProps {
-    dispatch: Dispatch<Action & ToDo>
+    dispatch: Dispatch<DataState>
 }
 
 function AddTodoComponent (props: AddTodoProps)  {

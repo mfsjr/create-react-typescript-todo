@@ -27,7 +27,7 @@ export function mapStateToProps(state: DataState): Partial<TodoListProps> {
     }
 }
 
-export function mapDispatchToProps(dispatch: Dispatch<ToggleToDoIndex>): Partial<TodoListProps> {
+export function mapDispatchToProps(dispatch: Dispatch<DataState>): Partial<TodoListProps> {
     // here is a replacement for an action creator function, a type-checked object literal
     let fn = (id: number): ToggleToDoIndex => { return {type: ActionId.ToggleTodo_Index, index: id}};
     return {
