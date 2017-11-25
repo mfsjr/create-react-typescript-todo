@@ -2,9 +2,7 @@ import * as React from 'react';
 
 export interface LinkProps {
     active: boolean,
-    // was PropTypes.node, translates to JSX.Element,
-    // see https://stackoverflow.com/questions/45519567/what-is-the-typescript-equivalent-of-react-proptypes-node
-    children: JSX.Element,
+    children: JSX.Element, // PropTypes.node
     onClick: () => any
 }
 
